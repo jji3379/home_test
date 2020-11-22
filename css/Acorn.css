@@ -1,0 +1,104 @@
+@charset "utf-8"; /* 한글을 이상한 문자열로 인식하지 않도록 방지 */
+/*
+    html페이지에서 <style></style>요소 안에 작성하는 문법과 동일
+*/
+.logo_special{ 
+    /*  아랫단과 구분을 지어주는 border 넣어준 class
+        윗단의 사이즈를 지정    */
+    position: relative;
+    height: 160px;
+    background-color: #fff;
+    border-bottom: 1px solid #e4e8eb;
+}
+.logo_group{
+    /*  logo_area 의 부모class 좌우 패딩을 지정해서 
+        양쪽에서 조금씩 띄움    */
+    position: relative;
+    width: 1130px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.logo_area{
+    /*logo_base(로고)와 searchBar(검색창input) searchBtn(버튼button)
+    이 담긴 공간  : 높이는 부모 요소의 100% */
+    position: relative;
+    height: 100%;
+    
+}
+.logo_base{
+    /*logo_base(로고)   */
+    position:relative;
+    top: 50%;
+    left:-9px;
+    margin-top: -32px;
+    display:inline-block;   
+}
+.imgLogo{
+    /*로고 를 살짝 위로 올려준다*/
+    vertical-align: middle;
+    margin-bottom: 8%;
+}
+#searchBar{
+    /* searchBar(input요소 + button의 부모요소)
+    position :  relative 지정 , 사이즈 지정*/
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    margin: auto;
+}
+input{
+    /* input 요소 외곽선을 0으로 없애고 폰트나 안의 패딩을 지정*/
+    width: 444px;
+    height: 24px;
+    font-size: 18px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline:0;
+    border: 0;
+    display: inline-block;
+    
+}
+#searchBtn{
+    /* button 요소로 absolute position으로 부모요소 안에서 오른쪽으로 이동
+    및 사이즈 지정 */
+    position: absolute;
+    
+    width: 56px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #19ce60;
+    cursor: pointer;
+    border:0;
+    font-size: 12px;
+    box-sizing:border-box;
+    margin: auto;
+}
+.green{
+    color: rgb(4, 224, 151);
+    font-weight: bold;
+}
+.black{
+    color: black;
+    font-weight: bold;
+}
+.ablack{ /*더보기 창 a tag 검은색*/
+    color:rgb(104, 103, 103);
+}
+.dlbox{ /*더보기 밑에 설정 제한폭 때문에 아래로 내려가는거 조정*/
+    width: 150px;
+    height: 275px;
+    border-right: solid thin gray;
+    margin-left: 5px;
+}
+.canfood{ /*더보기 밑에 있는 광고 이미지 사이즈 지정*/
+    width: 750px;
+    height: 135px;
+}
+
